@@ -9,13 +9,10 @@ import Profile from "./pages/Profile";
 import FoodInput from "./pages/FoodInput";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
-
 import CurrentFood from "./pages/CurrentFood";
 import ExpiredFood from "./pages/ExpiredFood";
 import FunFact from "./pages/FunFact";
 import colours from "./config/colours";
-
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -96,7 +93,6 @@ function MyTabs() {
               color={color}
               size={size}
             />
-
           ),
         }}
       />
@@ -104,12 +100,16 @@ function MyTabs() {
   );
 }
 
+// export default function App() {
+//   return (
+//     <NavigationContainer>
+//       <MyStack />
+//     </NavigationContainer>
+//   );
+// }
+
 export default function App() {
-  return (
-    <NavigationContainer>
-      <MyStack />
-    </NavigationContainer>
-  );
+  return <FoodInput />;
 }
 
 const styles = StyleSheet.create({
